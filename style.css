@@ -1,0 +1,61 @@
+body{
+	max-height:400px;
+	background-color:white;
+}
+
+#game{
+	background-color:#72c4cfff;
+	width:900px;
+	height:400px;
+	margin:auto;
+	overflow:hidden;
+	position:absolute;	
+	transform:translate(-50%,-50%);
+	top:50%;
+	left:50%;
+}
+
+#JIDAR_BLACK{
+	background-color:green;
+	width:50px;
+	height:400px;
+	position:relative;
+	left:950px;
+	animation:HARAKA 6s infinite;
+}
+
+
+#MAMAR{
+	background-color:#72c4cfff;
+	border-color:black #72c4cfff black #72c4cfff;
+	width:50px;
+	height:150px;
+	position:relative;
+	top:-300px;
+	left:950px;
+	animation:HARAKA 6s infinite;
+	z-index:2;
+}
+
+#BIRD{
+	width:14px;
+	height:14px;
+	position:relative;
+	top:-400px;
+	z-index:3;
+}
+#BIRD img{
+	width:54px;
+	height:54px;
+	position:relative;
+}
+
+@keyframes HARAKA{
+	 0%{ 
+               	 	left:1050px;
+	      }
+		  
+	100%{
+		     	   left:-900px;
+	 }	  
+}
